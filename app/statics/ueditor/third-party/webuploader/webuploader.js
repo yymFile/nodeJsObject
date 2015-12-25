@@ -183,7 +183,7 @@
      */
     define('base',[
         'dollar',
-        '../../../../../'
+        'promise'
     ], function( $, promise ) {
     
         var noop = function() {},

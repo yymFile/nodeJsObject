@@ -4,12 +4,13 @@ var path = require('path');
 var partials = require('express-partials');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
-var cookieParser = require('cookie-parser');
+var app = express();
+
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
-var app = express();
 app.set( 'view engine', 'html' );
 app.use(partials());
 // 运行ejs模块
